@@ -78,7 +78,7 @@ ul {
     padding: 0px 20px;
 }
 .phptpl-header .header-container .nav-list > li {
-    float: left;
+    
     display: inline-block;
     height: 70px;
     line-height: 70px;
@@ -133,4 +133,10 @@ a{
     box-sizing: border-box;
     cursor: pointer;
 }
-  
+a:hover{
+        color: #FF4444;
+}
+.product-center{
+    color: #2c3a46;
+}
+    
