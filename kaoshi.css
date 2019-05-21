@@ -110,17 +110,19 @@ a{
 .phptpl-header .header-container .btn-register_ {
     width: 80px;
     height: 30px;
-    line-height: 30px;
+    line-height: 31px;
     display: inline-block;
     background-color: #2b90ed;
     color: #fff;
     text-align: center;
     border-radius: 2px;
     cursor: pointer;
+    
 }
 .phptpl-header .header-container li.login_common_ {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 10px;
 }
+
 .phptpl-header .header-container .btn-login {
     width: 80px;
     height: 30px;
@@ -139,4 +141,95 @@ a:hover{
 .product-center{
     color: #2c3a46;
 }
-    
+.banner-container {
+  height: 420px;
+  width: 100%;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.swiper-wrapper {
+  position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+.swiper-container .swiper-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+.swiper-container .slide-1 .content-wrapper, .swiper-container .slide-2 .content-wrapper, .swiper-container .slide-3 .content-wrapper, .swiper-container .slide-4 .content-wrapper {
+ 
+  width: 1100px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  
+}
+h3 {
+  display: block;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  position: absolute;
+  
+}
+.swiper-container .slide-1 .content-wrapper h3, .swiper-container .slide-2 .content-wrapper h3, .swiper-container .slide-3 .content-wrapper h3, .swiper-container .slide-4 .content-wrapper h3 {
+  font-size: 44px;
+  margin: 100px 0 7px;
+  line-height: 62px;
+}
+
+a {
+  text-decoration: none;
+}
+.swiper-container .content-wrapper p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 55px;
+  
+ 
+}
+.swiper-container .content-wrapper a{
+  position: absolute;
+  
+} 
+a.pink-button {
+  color: #eb737f;
+}
+a.pink-button, a.red-button {
+  background-color: #fff;
+  padding: 12px 42px;
+}
+a.button {
+  font-size: 14px;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+ .btn-login:hover{
+  background:#2B90ED;
+  color: #ffffff !important;
+}
+
+ .btn-register_:hover{
+   background: lightskyblue !important;
+ }
