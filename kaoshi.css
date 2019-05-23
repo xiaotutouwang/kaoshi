@@ -4,7 +4,7 @@ body {
     margin: 0px;
 }
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a, div,  h3,  li, p {
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,7 +33,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     zoom: 1;
 
 }
-.phptpl-header .header-container .logo{
+.logo{
     display: inline-block;
     width: 72px;
     height: 25px;
@@ -41,14 +41,14 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, ca
     background-size: 72px 25px;
     background-image:url("https://img.yzcdn.cn/public_files/2016/11/29/8fc4cd6f771897cbf9663166a63a5302.png")
 }
-.phptpl-header .header-container .nav-link-container{
+.nav-link-container{
     display: inline-block;
     
     margin-left: 10px;
     margin-bottom: -1px;
     
 }
-.phptpl-header .header-container .nav-link-container .nav-link{
+.nav-link{
     
     width: 78px;
     color: #999;
@@ -69,12 +69,12 @@ ul {
 .phptpl-header ul {
     list-style: none;
 }
-.phptpl-header .header-container .nav-list {
+ .nav-list {
     float: right;
     zoom: 1;
     margin: 0px;
 }
-.phptpl-header .header-container .nav-list .current-highlight {
+.current-highlight {
     color: #FF4444 !important;
   
 }
@@ -88,10 +88,10 @@ ul {
     line-height: 70px;
 }
 
-.phptpl-header .header-container .nav-list .product-dropdown {
+.product-dropdown {
     z-index: 200;
 }
-.phptpl-header .header-container .nav-list .caret-margin {
+.caret-margin {
     margin-right: 16px;
 }
 html {
@@ -108,7 +108,7 @@ html, body {
 a{
     text-decoration:none
 }
-.phptpl-header .header-container .btn-register_ {
+.btn-register_ {
     width: 80px;
     height: 30px;
     line-height: 31px;
@@ -124,7 +124,7 @@ a{
     padding: 0px 0px 0px 10px;
 }
 
-.phptpl-header .header-container .btn-login {
+.btn-login {
     width: 80px;
     height: 30px;
     line-height: 28px;
@@ -174,16 +174,7 @@ a:hover{
   background-position: 50%;
 }
 
-/*h3 {
-  display: block;
-  
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  position: absolute;
-  
-}*/
+
 .swiper-container .slide-3 .content-wrapper h3{
   font-size: 44px;
   margin: 100px 0 7px;
@@ -268,4 +259,133 @@ a.button {
   font-size: 14px;
   text-decoration: none;
   border-radius: 2px;
+}
+.main-container .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  zoom: 1;
+}
+.main-container .wcard-container h3 {
+  font-family: PingFangSC-Medium;
+  font-size: 28px;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding-top: 90px;
+  text-align: center;
+}
+.main-container .wcard-container .wcard-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+.main-container .wcard-container .wcard-content .wcard-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.wcard-section {
+  margin-bottom: 28px;
+}
+.wcard-sectitle {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: PingFangSC-Medium;
+  letter-spacing: 0;
+  
+}
+.wcard-secsummary {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.main-container a.blue {
+  background-color: #38f;
+  color: #fff;
+}
+.main-container a.button {
+  font-size: 14px;
+  padding: 10px 42px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.main-container a.blue-outline {
+  border: 1px solid #38f;
+  color: #38f;
+  padding: 9px 42px;
+}
+.main-container a.button {
+  font-size: 14px;
+  padding: 10px 42px;
+  border-radius: 2px;
+  display: inline-block;
+}
+a.button {
+  font-size: 14px;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.tupian-right {
+  width: 615px;
+}
+.swiper-button-container {
+  width: 1100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 999;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.swiper-container .custom-prev {
+  right: 1130px;
+  left: auto;
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/L.png);
+}
+.swiper-container .custom-next {
+  left: 1130px;
+  right: auto;
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-image: url(https://img.yzcdn.cn/static/intro/img/newIndex/R.png);
+}
+.swiper-button-container:hover > .custom-prev{
+ visibility: visible;
+}
+
+.swiper-button-container:hover > .custom-next{
+  visibility: visible;
+ }
+.oo{
+  visibility: hidden;
 }
